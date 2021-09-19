@@ -15,13 +15,29 @@ print("使徒です!")
 
 # task3
 
-names: list =["シンジ", "レイ", "カヲルくん"]
-list.append("アスカ")
-print("list")
+names:  =["シンジ", "レイ", "カヲルくん"]
+print(names)
+names.append("アスカ")
+print(names)
 
 # task4
 
-for names in["シンジ", "レイ", "カヲルくん", "アスカ"]:
- print(names)
+for frind in names:
+ print(frind)
 
 #  task5
+
+def names():
+    print("シンジ")
+    print("レイ")
+    print("カヲルくん")
+    print("アスカ")
+    
+names()
+
+# task6
+
+def frind(names):
+    return names + "マリ"
+
+print(frind)    
