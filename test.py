@@ -41,5 +41,3 @@ def frind(names):
     return names + "マリ"
 
 print(frind)    
-
-print("aaa")
