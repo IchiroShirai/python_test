@@ -1,43 +1,39 @@
 # task1
 
-name1 : str = "ｼﾝｼﾞ"
-name2 : str = "ｶｦﾙくん"
+name1 : str = "シンジ"
+name2 : str = "カヲルくん"
 
-print(name1 + "と" + name2 + "は仲良し")
+print(f"{name1} と {name2} は仲良し")
 
 
 # task2
 
-name3 : str = "使徒です!"
-if name3 == "使徒です!"
-print("使徒です!")
+if name2 == "使徒です!":
+   print("使徒です!")
 
 
 # task3
 
-names:  =["シンジ", "レイ", "カヲルくん"]
+names: list =["シンジ", "レイ", "カヲルくん"]
 print(names)
 names.append("アスカ")
 print(names)
 
 # task4
 
-for frind in names:
- print(frind)
+for friend in names:
+ print(friend)
 
 #  task5
 
-def names():
-    print("シンジ")
-    print("レイ")
-    print("カヲルくん")
-    print("アスカ")
-    
-names()
+def tomodachi():
+    for friend in names:    
+        print(friend)
+
+tomodachi()    
 
 # task6
 
-def frind(names):
-    return names + "マリ"
+tomodachi2 = tomodachi()
 
-print(frind)    
+print(tomodachi2)    
