@@ -26,7 +26,9 @@ for friend in names:
 
 #  task5
 
-def tomodachi():
+def tomodachi() -> None:
+    names: list =["シンジ", "レイ", "カヲルくん"]
+    names.append("アスカ")
     for friend in names:    
         print(friend)
 
@@ -34,6 +36,22 @@ tomodachi()
 
 # task6
 
-tomodachi2 = tomodachi()
+def tomodachi2(mari: str):
+    names: list = ["シンジ", "レイ", "カヲルくん"]
+    names.append("アスカ")
+    names.append(mari)
+    for friend in names:
+        print(friend)
 
-print(tomodachi2)    
+
+tomodachi2("マリ")
+
+
+#  task7
+
+names: list = ["シンジ", "レイ", "カヲルくん"]
+input_name: str = input("名前を入力してください：")
+if input_name in names:
+    print(f"{input_name}はいます。")
+else:
+    print(f"{input_name}はいません。")
